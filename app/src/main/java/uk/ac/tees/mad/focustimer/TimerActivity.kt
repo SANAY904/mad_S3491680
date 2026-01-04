@@ -1,4 +1,8 @@
 package uk.ac.tees.mad.focustimer
+<<<<<<< HEAD
+=======
+
+>>>>>>> c4144caddc92ab5f19b818255ab88e93af1a979a
 import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.app.PendingIntent
@@ -16,11 +20,21 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
+<<<<<<< HEAD
 import androidx.core.content.ContextCompat
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.Timestamp
+=======
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FieldValue
+import com.google.firebase.firestore.FirebaseFirestore
+<<<<<<< HEAD
+import com.google.firebase.Timestamp
+=======
+>>>>>>> 82d5e1e42278d6baf72332826bb700cc5cb22bf1
+>>>>>>> c4144caddc92ab5f19b818255ab88e93af1a979a
 import org.json.JSONArray
 import uk.ac.tees.mad.focustimer.databinding.ActivityTimerBinding
 import java.io.BufferedReader
@@ -60,7 +74,14 @@ class TimerActivity : AppCompatActivity() {
 
         createNotificationChannel()
         requestNotificationPermission()
+<<<<<<< HEAD
         loadStats()
+=======
+<<<<<<< HEAD
+        loadStats()
+=======
+>>>>>>> 82d5e1e42278d6baf72332826bb700cc5cb22bf1
+>>>>>>> c4144caddc92ab5f19b818255ab88e93af1a979a
 
         binding.settingsButton.setOnClickListener {
             startActivity(Intent(this, SettingsActivity::class.java))
@@ -141,7 +162,11 @@ class TimerActivity : AppCompatActivity() {
 
             override fun onFinish() {
                 timerRunning = false
+<<<<<<< HEAD
                 updateButtonUI()
+=======
+                binding.startPauseButton.text = "Start"
+>>>>>>> c4144caddc92ab5f19b818255ab88e93af1a979a
                 if (isFocusSession) {
                     focusSessionsCompleted++
                     updateStats(focusLengthInMillis)
@@ -154,17 +179,29 @@ class TimerActivity : AppCompatActivity() {
                 }
                 loadTimerSettings()
                 updateTimerText()
+<<<<<<< HEAD
+=======
+                binding.startPauseButton.text = if(isFocusSession) "Start Focus" else "Start Break"
+>>>>>>> c4144caddc92ab5f19b818255ab88e93af1a979a
             }
         }.start()
 
         timerRunning = true
+<<<<<<< HEAD
         updateButtonUI()
+=======
+        binding.startPauseButton.text = "Pause"
+>>>>>>> c4144caddc92ab5f19b818255ab88e93af1a979a
     }
 
     private fun pauseTimer() {
         timer?.cancel()
         timerRunning = false
+<<<<<<< HEAD
         updateButtonUI()
+=======
+        binding.startPauseButton.text = "Start"
+>>>>>>> c4144caddc92ab5f19b818255ab88e93af1a979a
     }
 
     private fun resetTimer() {
@@ -172,6 +209,7 @@ class TimerActivity : AppCompatActivity() {
         timerRunning = false
         loadTimerSettings()
         updateTimerText()
+<<<<<<< HEAD
         updateButtonUI()
         binding.progressIndicator.progress = 100
     }
@@ -186,6 +224,12 @@ class TimerActivity : AppCompatActivity() {
         }
     }
 
+=======
+        binding.startPauseButton.text = if (isFocusSession) "Start Focus" else "Start Break"
+        binding.progressIndicator.progress = 100
+    }
+
+>>>>>>> c4144caddc92ab5f19b818255ab88e93af1a979a
     private fun updateTimerText() {
         val minutes = (timeLeftInMillis / 1000) / 60
         val seconds = (timeLeftInMillis / 1000) % 60
@@ -297,6 +341,7 @@ class TimerActivity : AppCompatActivity() {
             val userDocRef = db.collection("users").document(user.uid)
             userDocRef.update("totalFocusTime", FieldValue.increment(focusTime / 1000))
             userDocRef.update("sessionsCompleted", FieldValue.increment(1))
+<<<<<<< HEAD
                 .addOnSuccessListener {
                     Log.d("TimerActivity", "Stats updated successfully!")
                     loadStats()
@@ -304,6 +349,20 @@ class TimerActivity : AppCompatActivity() {
                 .addOnFailureListener { e ->
                     Log.w("TimerActivity", "Error updating stats", e)
                 }
+=======
+                .addOnSuccessListener { 
+<<<<<<< HEAD
+                    Log.d("TimerActivity", "Stats updated successfully!")
+                    loadStats() 
+=======
+                    Log.d("TimerActivity", "Stats updated successfully!") 
+>>>>>>> 82d5e1e42278d6baf72332826bb700cc5cb22bf1
+                }
+                .addOnFailureListener { e -> 
+                    Log.w("TimerActivity", "Error updating stats", e) 
+                }
+<<<<<<< HEAD
+>>>>>>> c4144caddc92ab5f19b818255ab88e93af1a979a
 
             val session = hashMapOf(
                 "type" to "Focus",
@@ -320,9 +379,12 @@ class TimerActivity : AppCompatActivity() {
             val userDocRef = db.collection("users").document(user.uid)
             userDocRef.get().addOnSuccessListener {
                 if (it.exists()) {
+<<<<<<< HEAD
                     val name = it.getString("name")
                     binding.welcomeText.text = "Welcome, $name"
 
+=======
+>>>>>>> c4144caddc92ab5f19b818255ab88e93af1a979a
                     val totalFocusTime = it.getLong("totalFocusTime") ?: 0
                     val sessionsCompleted = it.getLong("sessionsCompleted") ?: 0
                     val hours = totalFocusTime / 3600
@@ -331,6 +393,11 @@ class TimerActivity : AppCompatActivity() {
                     binding.sessionsCompletedValue.text = sessionsCompleted.toString()
                 }
             }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 82d5e1e42278d6baf72332826bb700cc5cb22bf1
+>>>>>>> c4144caddc92ab5f19b818255ab88e93af1a979a
         }
     }
 

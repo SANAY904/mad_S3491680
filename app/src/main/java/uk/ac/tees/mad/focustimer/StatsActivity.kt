@@ -1,6 +1,10 @@
 package uk.ac.tees.mad.focustimer
 
 import android.os.Bundle
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c4144caddc92ab5f19b818255ab88e93af1a979a
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -21,6 +25,16 @@ data class Session(
     val duration: Long = 0
 )
 
+<<<<<<< HEAD
+=======
+=======
+import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
+import uk.ac.tees.mad.focustimer.databinding.ActivityStatsBinding
+
+>>>>>>> 82d5e1e42278d6baf72332826bb700cc5cb22bf1
+>>>>>>> c4144caddc92ab5f19b818255ab88e93af1a979a
 class StatsActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityStatsBinding
@@ -45,6 +59,10 @@ class StatsActivity : AppCompatActivity() {
     private fun loadStats() {
         val user = auth.currentUser
         if (user != null) {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c4144caddc92ab5f19b818255ab88e93af1a979a
             val userDocRef = db.collection("users").document(user.uid)
 
             userDocRef.collection("sessions").orderBy("timestamp", Query.Direction.DESCENDING).limit(10).get()
@@ -56,6 +74,24 @@ class StatsActivity : AppCompatActivity() {
                 }
         } else {
             // Handle the case where there is no user logged in
+<<<<<<< HEAD
+=======
+=======
+            db.collection("users").document(user.uid).get()
+                .addOnSuccessListener { document ->
+                    if (document != null) {
+                        val totalFocusTime = document.getLong("totalFocusTime") ?: 0
+                        val sessionsCompleted = document.getLong("sessionsCompleted") ?: 0
+
+                        val hours = totalFocusTime / 3600
+                        val minutes = (totalFocusTime % 3600) / 60
+
+                        binding.totalFocusTimeValue.text = "${hours}h ${minutes}m"
+                        binding.sessionsCompletedValue.text = sessionsCompleted.toString()
+                    }
+                }
+>>>>>>> 82d5e1e42278d6baf72332826bb700cc5cb22bf1
+>>>>>>> c4144caddc92ab5f19b818255ab88e93af1a979a
         }
     }
 
@@ -63,6 +99,10 @@ class StatsActivity : AppCompatActivity() {
         onBackPressed()
         return true
     }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c4144caddc92ab5f19b818255ab88e93af1a979a
 }
 
 class SessionAdapter(private val sessions: List<Session>) : RecyclerView.Adapter<SessionAdapter.ViewHolder>() {
@@ -87,4 +127,9 @@ class SessionAdapter(private val sessions: List<Session>) : RecyclerView.Adapter
     }
 
     override fun getItemCount() = sessions.size
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 82d5e1e42278d6baf72332826bb700cc5cb22bf1
+>>>>>>> c4144caddc92ab5f19b818255ab88e93af1a979a
 }
