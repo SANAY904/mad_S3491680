@@ -1,35 +1,51 @@
 package uk.ac.tees.mad.focustimer
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import android.content.Context
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+import android.content.Context
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 <<<<<<< HEAD
+<<<<<<< HEAD
 import androidx.core.widget.doOnTextChanged
 import com.google.firebase.auth.FirebaseAuth
 import uk.ac.tees.mad.focustimer.databinding.ActivityLoginBinding
 =======
+=======
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
 import androidx.biometric.BiometricManager
 import androidx.biometric.BiometricPrompt
 import androidx.core.content.ContextCompat
 import com.google.firebase.auth.FirebaseAuth
 import uk.ac.tees.mad.focustimer.databinding.ActivityLoginBinding
 import java.util.concurrent.Executor
+<<<<<<< HEAD
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
 
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityLoginBinding
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     private lateinit var executor: Executor
     private lateinit var biometricPrompt: BiometricPrompt
     private lateinit var promptInfo: BiometricPrompt.PromptInfo
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+    private lateinit var executor: Executor
+    private lateinit var biometricPrompt: BiometricPrompt
+    private lateinit var promptInfo: BiometricPrompt.PromptInfo
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
     private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,6 +64,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         // Clear errors when user starts typing
         binding.emailEditText.doOnTextChanged { _, _, _, _ ->
             binding.emailInputLayout.error = null
@@ -56,6 +73,8 @@ class LoginActivity : AppCompatActivity() {
             binding.passwordInputLayout.error = null
         }
 =======
+=======
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
         executor = ContextCompat.getMainExecutor(this)
         biometricPrompt = BiometricPrompt(this, executor,
             object : BiometricPrompt.AuthenticationCallback() {
@@ -85,12 +104,16 @@ class LoginActivity : AppCompatActivity() {
 
         val sharedPreferences = getSharedPreferences("LoginPrefs", MODE_PRIVATE)
         binding.fingerprintCheckBox.isChecked = sharedPreferences.getBoolean("useFingerprint", false)
+<<<<<<< HEAD
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
 
         binding.loginButton.setOnClickListener {
             val email = binding.emailEditText.text.toString().trim()
             val password = binding.passwordEditText.text.toString().trim()
 
+<<<<<<< HEAD
 <<<<<<< HEAD
             // Reset errors
             binding.emailInputLayout.error = null
@@ -98,16 +121,24 @@ class LoginActivity : AppCompatActivity() {
 
 =======
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
             if (email.isNotEmpty() && password.isNotEmpty()) {
                 auth.signInWithEmailAndPassword(email, password)
                     .addOnCompleteListener(this) { task ->
                         if (task.isSuccessful) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
                             // Correctly save the fingerprint preference
                             sharedPreferences.edit().putBoolean("useFingerprint", binding.fingerprintCheckBox.isChecked).apply()
 
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+                            // Correctly save the fingerprint preference
+                            sharedPreferences.edit().putBoolean("useFingerprint", binding.fingerprintCheckBox.isChecked).apply()
+
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
                             Toast.makeText(baseContext, "Login successful.", Toast.LENGTH_SHORT).show()
                             startActivity(Intent(this, TimerActivity::class.java))
                             finish()
@@ -119,11 +150,15 @@ class LoginActivity : AppCompatActivity() {
                     }
             } else {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 if (email.isEmpty()) binding.emailInputLayout.error = "Email is required"
                 if (password.isEmpty()) binding.passwordInputLayout.error = "Password is required"
 =======
                 binding.emailInputLayout.error = "Email and password cannot be empty"
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+                binding.emailInputLayout.error = "Email and password cannot be empty"
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
             }
         }
 
@@ -131,7 +166,10 @@ class LoginActivity : AppCompatActivity() {
             startActivity(Intent(this, SignupActivity::class.java))
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
 
         binding.fingerprintButton.setOnClickListener {
             if (binding.fingerprintCheckBox.isChecked) {
@@ -150,6 +188,9 @@ class LoginActivity : AppCompatActivity() {
     public override fun onStart() {
         super.onStart()
         // Session check is now handled in onCreate to prevent re-triggering on every onStart
+<<<<<<< HEAD
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
     }
 }

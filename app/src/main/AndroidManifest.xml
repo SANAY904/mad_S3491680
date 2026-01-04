@@ -5,9 +5,13 @@
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.INTERNET" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     <uses-permission android:name="android.permission.USE_BIOMETRIC" />
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
 
     <application
         android:allowBackup="true"

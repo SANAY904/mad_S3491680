@@ -1,4 +1,11 @@
 package uk.ac.tees.mad.focustimer
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> c4144caddc92ab5f19b818255ab88e93af1a979a
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
 import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.app.PendingIntent
@@ -11,25 +18,47 @@ import android.os.Bundle
 import android.os.CountDownTimer
 import android.util.Log
 <<<<<<< HEAD
+<<<<<<< HEAD
 import android.view.View
 import androidx.activity.result.contract.ActivityResultContracts
 =======
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AlertDialog
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AlertDialog
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
+<<<<<<< HEAD
 import androidx.core.content.ContextCompat
 <<<<<<< HEAD
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 =======
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+<<<<<<< HEAD
+import androidx.core.content.ContextCompat
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.Timestamp
+<<<<<<< HEAD
+=======
+=======
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FieldValue
+import com.google.firebase.firestore.FirebaseFirestore
+<<<<<<< HEAD
+import com.google.firebase.Timestamp
+=======
+>>>>>>> 82d5e1e42278d6baf72332826bb700cc5cb22bf1
+>>>>>>> c4144caddc92ab5f19b818255ab88e93af1a979a
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
 import org.json.JSONArray
 import uk.ac.tees.mad.focustimer.databinding.ActivityTimerBinding
 import java.io.BufferedReader
@@ -37,9 +66,12 @@ import java.io.InputStreamReader
 import java.net.HttpURLConnection
 import java.net.URL
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.util.Calendar
 =======
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
 
 class TimerActivity : AppCompatActivity() {
 
@@ -54,6 +86,7 @@ class TimerActivity : AppCompatActivity() {
 
     private var isFocusSession = true
 <<<<<<< HEAD
+<<<<<<< HEAD
     private var focusSessionsCompletedToday = 0
     private var currentQuoteText = "Stay focused and keep moving forward!"
     private var pendingCompletionMessage: String? = null
@@ -61,15 +94,23 @@ class TimerActivity : AppCompatActivity() {
 =======
     private var focusSessionsCompleted = 0
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+    private var focusSessionsCompleted = 0
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
 
     private val notificationPermissionLauncher = registerForActivityResult(ActivityResultContracts.RequestPermission()) { isGranted: Boolean ->
         if (isGranted) {
             // Permission granted
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         } else {
             // Permission denied
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+        } else {
+            // Permission denied
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
         }
     }
 
@@ -83,12 +124,23 @@ class TimerActivity : AppCompatActivity() {
 
         createNotificationChannel()
         requestNotificationPermission()
+<<<<<<< HEAD
         loadStats()
 <<<<<<< HEAD
         
         binding.quoteCard.visibility = View.GONE
 =======
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+<<<<<<< HEAD
+        loadStats()
+=======
+<<<<<<< HEAD
+        loadStats()
+=======
+>>>>>>> 82d5e1e42278d6baf72332826bb700cc5cb22bf1
+>>>>>>> c4144caddc92ab5f19b818255ab88e93af1a979a
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
 
         binding.settingsButton.setOnClickListener {
             startActivity(Intent(this, SettingsActivity::class.java))
@@ -115,9 +167,12 @@ class TimerActivity : AppCompatActivity() {
         super.onResume()
         handleIntent(intent)
 <<<<<<< HEAD
+<<<<<<< HEAD
         loadStats()
 =======
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
     }
 
     override fun onNewIntent(intent: Intent) {
@@ -132,20 +187,28 @@ class TimerActivity : AppCompatActivity() {
             resetTimer()
             startTimer()
 <<<<<<< HEAD
+<<<<<<< HEAD
             intent.removeExtra("startBreak") 
 =======
             intent.removeExtra("startBreak") // Clear the extra
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+            intent.removeExtra("startBreak") // Clear the extra
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
         } else if (intent.hasExtra("startFocus")) {
             isFocusSession = true
             loadTimerSettings()
             resetTimer()
             startTimer()
 <<<<<<< HEAD
+<<<<<<< HEAD
             intent.removeExtra("startFocus") 
 =======
             intent.removeExtra("startFocus") // Clear the extra
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+            intent.removeExtra("startFocus") // Clear the extra
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
         } else {
             loadTimerSettings()
             updateTimerText()
@@ -164,10 +227,14 @@ class TimerActivity : AppCompatActivity() {
                 focusLengthInMillis
             } else {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 if ((focusSessionsCompletedToday % 4) == 0 && focusSessionsCompletedToday != 0) {
 =======
                 if ((focusSessionsCompleted % 4) == 0 && focusSessionsCompleted != 0) {
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+                if ((focusSessionsCompleted % 4) == 0 && focusSessionsCompleted != 0) {
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
                     longBreakLength * 60 * 1000
                 } else {
                     shortBreakLength * 60 * 1000
@@ -175,10 +242,13 @@ class TimerActivity : AppCompatActivity() {
             }
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         
         binding.sessionStatusChip.text = if (isFocusSession) "FOCUS" else "BREAK"
 =======
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
     }
 
     private fun startTimer() {
@@ -190,6 +260,7 @@ class TimerActivity : AppCompatActivity() {
 
             override fun onFinish() {
                 timerRunning = false
+<<<<<<< HEAD
                 updateButtonUI()
 <<<<<<< HEAD
                 
@@ -206,6 +277,13 @@ class TimerActivity : AppCompatActivity() {
                 
                 FetchQuoteTask().execute()
 =======
+=======
+<<<<<<< HEAD
+                updateButtonUI()
+=======
+                binding.startPauseButton.text = "Start"
+>>>>>>> c4144caddc92ab5f19b818255ab88e93af1a979a
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
                 if (isFocusSession) {
                     focusSessionsCompleted++
                     updateStats(focusLengthInMillis)
@@ -216,13 +294,23 @@ class TimerActivity : AppCompatActivity() {
                     isFocusSession = true
                     showFocusNotification()
                 }
+<<<<<<< HEAD
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
                 loadTimerSettings()
                 updateTimerText()
+=======
+                loadTimerSettings()
+                updateTimerText()
+<<<<<<< HEAD
+=======
+                binding.startPauseButton.text = if(isFocusSession) "Start Focus" else "Start Break"
+>>>>>>> c4144caddc92ab5f19b818255ab88e93af1a979a
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
             }
         }.start()
 
         timerRunning = true
+<<<<<<< HEAD
         updateButtonUI()
     }
 
@@ -272,6 +360,23 @@ class TimerActivity : AppCompatActivity() {
         timer?.cancel()
         timerRunning = false
         updateButtonUI()
+=======
+<<<<<<< HEAD
+        updateButtonUI()
+=======
+        binding.startPauseButton.text = "Pause"
+>>>>>>> c4144caddc92ab5f19b818255ab88e93af1a979a
+    }
+
+    private fun pauseTimer() {
+        timer?.cancel()
+        timerRunning = false
+<<<<<<< HEAD
+        updateButtonUI()
+=======
+        binding.startPauseButton.text = "Start"
+>>>>>>> c4144caddc92ab5f19b818255ab88e93af1a979a
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
     }
 
     private fun resetTimer() {
@@ -279,6 +384,10 @@ class TimerActivity : AppCompatActivity() {
         timerRunning = false
         loadTimerSettings()
         updateTimerText()
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
         updateButtonUI()
         binding.progressIndicator.progress = 100
     }
@@ -293,6 +402,15 @@ class TimerActivity : AppCompatActivity() {
         }
     }
 
+<<<<<<< HEAD
+=======
+=======
+        binding.startPauseButton.text = if (isFocusSession) "Start Focus" else "Start Break"
+        binding.progressIndicator.progress = 100
+    }
+
+>>>>>>> c4144caddc92ab5f19b818255ab88e93af1a979a
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
     private fun updateTimerText() {
         val minutes = (timeLeftInMillis / 1000) / 60
         val seconds = (timeLeftInMillis / 1000) % 60
@@ -304,10 +422,14 @@ class TimerActivity : AppCompatActivity() {
             sharedPreferences.getLong("focusLength", 25) * 60 * 1000
         } else {
 <<<<<<< HEAD
+<<<<<<< HEAD
             if ((focusSessionsCompletedToday % 4) == 0 && focusSessionsCompletedToday != 0) {
 =======
             if ((focusSessionsCompleted % 4) == 0 && focusSessionsCompleted != 0) {
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+            if ((focusSessionsCompleted % 4) == 0 && focusSessionsCompleted != 0) {
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
                 sharedPreferences.getLong("longBreakLength", 15) * 60 * 1000
             } else {
                 sharedPreferences.getLong("shortBreakLength", 5) * 60 * 1000
@@ -340,10 +462,14 @@ class TimerActivity : AppCompatActivity() {
 
         val sharedPreferences = getSharedPreferences("TimerSettings", Context.MODE_PRIVATE)
 <<<<<<< HEAD
+<<<<<<< HEAD
         val breakLength = if ((focusSessionsCompletedToday % 4) == 0 && focusSessionsCompletedToday != 0) {
 =======
         val breakLength = if ((focusSessionsCompleted % 4) == 0 && focusSessionsCompleted != 0) {
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+        val breakLength = if ((focusSessionsCompleted % 4) == 0 && focusSessionsCompleted != 0) {
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
             sharedPreferences.getLong("longBreakLength", 15)
         } else {
             sharedPreferences.getLong("shortBreakLength", 5)
@@ -395,6 +521,7 @@ class TimerActivity : AppCompatActivity() {
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     private fun updateStats(focusTime: Long) {
         val user = auth.currentUser ?: return
         val userDocRef = db.collection("users").document(user.uid)
@@ -444,6 +571,8 @@ class TimerActivity : AppCompatActivity() {
                 updateGoalProgress()
             }
 =======
+=======
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
     private fun showQuote() {
         FetchQuoteTask().execute()
     }
@@ -462,6 +591,10 @@ class TimerActivity : AppCompatActivity() {
             val userDocRef = db.collection("users").document(user.uid)
             userDocRef.update("totalFocusTime", FieldValue.increment(focusTime / 1000))
             userDocRef.update("sessionsCompleted", FieldValue.increment(1))
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
                 .addOnSuccessListener {
                     Log.d("TimerActivity", "Stats updated successfully!")
                     loadStats()
@@ -469,6 +602,23 @@ class TimerActivity : AppCompatActivity() {
                 .addOnFailureListener { e ->
                     Log.w("TimerActivity", "Error updating stats", e)
                 }
+<<<<<<< HEAD
+=======
+=======
+                .addOnSuccessListener { 
+<<<<<<< HEAD
+                    Log.d("TimerActivity", "Stats updated successfully!")
+                    loadStats() 
+=======
+                    Log.d("TimerActivity", "Stats updated successfully!") 
+>>>>>>> 82d5e1e42278d6baf72332826bb700cc5cb22bf1
+                }
+                .addOnFailureListener { e -> 
+                    Log.w("TimerActivity", "Error updating stats", e) 
+                }
+<<<<<<< HEAD
+>>>>>>> c4144caddc92ab5f19b818255ab88e93af1a979a
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
 
             val session = hashMapOf(
                 "type" to "Focus",
@@ -485,9 +635,18 @@ class TimerActivity : AppCompatActivity() {
             val userDocRef = db.collection("users").document(user.uid)
             userDocRef.get().addOnSuccessListener {
                 if (it.exists()) {
+<<<<<<< HEAD
                     val name = it.getString("name")
                     binding.welcomeText.text = "Welcome, $name"
 
+=======
+<<<<<<< HEAD
+                    val name = it.getString("name")
+                    binding.welcomeText.text = "Welcome, $name"
+
+=======
+>>>>>>> c4144caddc92ab5f19b818255ab88e93af1a979a
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
                     val totalFocusTime = it.getLong("totalFocusTime") ?: 0
                     val sessionsCompleted = it.getLong("sessionsCompleted") ?: 0
                     val hours = totalFocusTime / 3600
@@ -496,8 +655,17 @@ class TimerActivity : AppCompatActivity() {
                     binding.sessionsCompletedValue.text = sessionsCompleted.toString()
                 }
             }
+<<<<<<< HEAD
         }
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 82d5e1e42278d6baf72332826bb700cc5cb22bf1
+>>>>>>> c4144caddc92ab5f19b818255ab88e93af1a979a
+        }
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
     }
 
     private inner class FetchQuoteTask : AsyncTask<Void, Void, String>() {
@@ -507,10 +675,13 @@ class TimerActivity : AppCompatActivity() {
                 val url = URL("https://zenquotes.io/api/random")
                 urlConnection = url.openConnection() as HttpURLConnection
 <<<<<<< HEAD
+<<<<<<< HEAD
                 urlConnection.connectTimeout = 5000
                 urlConnection.readTimeout = 5000
 =======
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
                 val reader = BufferedReader(InputStreamReader(urlConnection.inputStream))
                 val stringBuilder = StringBuilder()
                 var line: String?
@@ -520,10 +691,14 @@ class TimerActivity : AppCompatActivity() {
                 return stringBuilder.toString()
             } catch (e: Exception) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 Log.e("TimerActivity", "Error fetching quote: ${e.message}")
 =======
                 e.printStackTrace()
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+                e.printStackTrace()
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
             } finally {
                 urlConnection?.disconnect()
             }
@@ -532,15 +707,19 @@ class TimerActivity : AppCompatActivity() {
 
         override fun onPostExecute(result: String?) {
 <<<<<<< HEAD
+<<<<<<< HEAD
             var finalQuote = currentQuoteText
 =======
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
             if (result != null) {
                 try {
                     val jsonArray = JSONArray(result)
                     val jsonObject = jsonArray.getJSONObject(0)
                     val quote = jsonObject.getString("q")
                     val author = jsonObject.getString("a")
+<<<<<<< HEAD
 <<<<<<< HEAD
                     finalQuote = "\"$quote\" — $author"
                 } catch (e: Exception) {
@@ -553,12 +732,17 @@ class TimerActivity : AppCompatActivity() {
                 pendingCompletionMessage = null
             }
 =======
+=======
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
                     showQuoteDialog(quote, author)
                 } catch (e: Exception) {
                     e.printStackTrace()
                 }
             }
+<<<<<<< HEAD
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
         }
     }
 }

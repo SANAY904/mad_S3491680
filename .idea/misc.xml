@@ -1,7 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 =======
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+>>>>>>> 82d5e1e42278d6baf72332826bb700cc5cb22bf1
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="jbr-21" project-jdk-type="JavaSDK">
@@ -14,10 +20,14 @@
     <option name="state">
       <ProjectState>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <option name="scale" value="0.13938720703125002" />
 =======
         <option name="scale" value="0.172313232421875" />
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+        <option name="scale" value="0.15402099609375003" />
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
       </ProjectState>
     </option>
   </component>

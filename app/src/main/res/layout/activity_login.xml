@@ -46,12 +46,16 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
 <<<<<<< HEAD
+<<<<<<< HEAD
                         android:layout_marginTop="12dp"
                         app:errorEnabled="true"
                         app:errorIconDrawable="@null">
 =======
                         android:layout_marginTop="12dp">
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+                        android:layout_marginTop="12dp">
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/emailEditText"
@@ -68,12 +72,16 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
 <<<<<<< HEAD
+<<<<<<< HEAD
                         app:endIconMode="password_toggle"
                         app:errorEnabled="true"
                         app:errorIconDrawable="@null">
 =======
                         app:passwordToggleEnabled="true">
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+                        app:passwordToggleEnabled="true">
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/passwordEditText"
@@ -84,7 +92,10 @@
                     </com.google.android.material.textfield.TextInputLayout>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
                     <CheckBox
                         android:id="@+id/fingerprintCheckBox"
                         android:layout_width="wrap_content"
@@ -92,15 +103,21 @@
                         android:layout_marginTop="16dp"
                         android:text="Use Fingerprint" />
 
+<<<<<<< HEAD
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
                     <Button
                         android:id="@+id/loginButton"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Login"
 <<<<<<< HEAD
+<<<<<<< HEAD
                         android:layout_marginTop="8dp"/>
 =======
+=======
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
                         android:layout_marginTop="20dp"/>
 
                     <ImageButton
@@ -111,7 +128,10 @@
                         android:background="?attr/selectableItemBackgroundBorderless"
                         android:layout_gravity="center"
                         android:layout_marginTop="16dp" />
+<<<<<<< HEAD
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
 
                     <TextView
                         android:id="@+id/signupTextView"

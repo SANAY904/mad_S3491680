@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+<<<<<<< HEAD
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -16,6 +17,15 @@
             android:background="@android:color/transparent"
             app:elevation="0dp">
 =======
+=======
+<<<<<<< HEAD
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+=======
+    <androidx.constraintlayout.widget.ConstraintLayout
+>>>>>>> c4144caddc92ab5f19b818255ab88e93af1a979a
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
         tools:context=".TimerActivity">
 
         <com.google.android.material.appbar.AppBarLayout
@@ -23,13 +33,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent">
+<<<<<<< HEAD
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
 
             <com.google.android.material.appbar.MaterialToolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize">
 
+<<<<<<< HEAD
 <<<<<<< HEAD
                 <TextView
                     style="@style/TextAppearance.Material3.TitleLarge"
@@ -59,6 +73,8 @@
                     android:src="@drawable/ic_settings"
                     app:tint="?attr/colorOnSurfaceVariant" />
 =======
+=======
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
                 <ImageButton
                     android:id="@+id/statsButton"
                     android:layout_width="wrap_content"
@@ -76,17 +92,25 @@
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:padding="16dp"
                     android:src="@drawable/ic_settings" />
+<<<<<<< HEAD
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
 
             </com.google.android.material.appbar.MaterialToolbar>
 
         </com.google.android.material.appbar.AppBarLayout>
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
+<<<<<<< HEAD
 <<<<<<< HEAD
             <!-- Daily Goal Progress -->
             <LinearLayout
@@ -203,6 +227,8 @@
 
             <!-- Stats Overview Card -->
 =======
+=======
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
             <TextView
                 android:id="@+id/welcomeText"
                 style="@style/TextAppearance.Material3.TitleLarge"
@@ -214,11 +240,15 @@
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="Welcome, User" />
 
+<<<<<<< HEAD
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/statsCard"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+<<<<<<< HEAD
 <<<<<<< HEAD
                 android:layout_marginHorizontal="24dp"
                 android:layout_marginBottom="32dp"
@@ -230,17 +260,23 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
 =======
+=======
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
                 android:layout_margin="16dp"
                 app:cardCornerRadius="16dp"
                 app:cardElevation="4dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/welcomeText">
+<<<<<<< HEAD
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+<<<<<<< HEAD
 <<<<<<< HEAD
                     android:orientation="horizontal"
                     android:padding="20dp">
@@ -249,6 +285,11 @@
                     android:orientation="horizontal"
                     android:padding="16dp">
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -259,6 +300,7 @@
 
                         <TextView
                             android:id="@+id/totalFocusTimeValue"
+<<<<<<< HEAD
 <<<<<<< HEAD
                             style="@style/TextAppearance.Material3.TitleLarge"
                             android:layout_width="wrap_content"
@@ -279,6 +321,8 @@
                         android:layout_height="match_parent"
                         android:background="?attr/colorOutlineVariant" />
 =======
+=======
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
                             style="@style/TextAppearance.MaterialComponents.Headline6"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -292,7 +336,10 @@
                             android:text="Total Focus Time" />
 
                     </LinearLayout>
+<<<<<<< HEAD
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -303,6 +350,7 @@
 
                         <TextView
                             android:id="@+id/sessionsCompletedValue"
+<<<<<<< HEAD
 <<<<<<< HEAD
                             style="@style/TextAppearance.Material3.TitleLarge"
                             android:layout_width="wrap_content"
@@ -317,6 +365,8 @@
                             android:alpha="0.6"
                             android:text="Sessions" />
 =======
+=======
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
                             style="@style/TextAppearance.MaterialComponents.Headline6"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -329,11 +379,15 @@
                             android:layout_height="wrap_content"
                             android:text="Sessions Completed" />
 
+<<<<<<< HEAD
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
                     </LinearLayout>
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
             <!-- Control Buttons -->
             <LinearLayout
@@ -371,6 +425,8 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 =======
+=======
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
             <com.google.android.material.progressindicator.CircularProgressIndicator
                 android:id="@+id/progressIndicator"
                 android:layout_width="wrap_content"
@@ -417,6 +473,133 @@
             android:text="Start"
             app:icon="@android:drawable/ic_media_play" />
 
+<<<<<<< HEAD
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
+=======
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+=======
+<<<<<<< HEAD
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/statsCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            app:layout_constraintTop_toBottomOf="@id/appBarLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/totalFocusTimeValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="0h 0m"
+                        style="@style/TextAppearance.MaterialComponents.Headline6"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Focus Time"
+                        style="@style/TextAppearance.MaterialComponents.Caption" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/sessionsCompletedValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="0"
+                        style="@style/TextAppearance.MaterialComponents.Headline6"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sessions Completed"
+                        style="@style/TextAppearance.MaterialComponents.Caption" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+=======
+>>>>>>> 82d5e1e42278d6baf72332826bb700cc5cb22bf1
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/progressIndicator"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:indeterminate="false"
+            app:indicatorSize="300dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+<<<<<<< HEAD
+            app:layout_constraintTop_toBottomOf="@id/statsCard" />
+=======
+            app:layout_constraintTop_toBottomOf="@id/appBarLayout" />
+>>>>>>> 82d5e1e42278d6baf72332826bb700cc5cb22bf1
+
+        <TextView
+            android:id="@+id/timerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25:00"
+            android:textSize="60sp"
+            app:layout_constraintBottom_toBottomOf="@id/progressIndicator"
+            app:layout_constraintEnd_toEndOf="@id/progressIndicator"
+            app:layout_constraintStart_toStartOf="@id/progressIndicator"
+            app:layout_constraintTop_toTopOf="@id/progressIndicator" />
+
+        <Button
+            android:id="@+id/startPauseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Start"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+<<<<<<< HEAD
+            app:layout_constraintTop_toBottomOf="@id/progressIndicator" />
+=======
+            app:layout_constraintTop_toBottomOf="@+id/progressIndicator" />
+>>>>>>> 82d5e1e42278d6baf72332826bb700cc5cb22bf1
+
+        <ImageButton
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_rotate"
+            app:layout_constraintEnd_toEndOf="@+id/startPauseButton"
+            app:layout_constraintStart_toStartOf="@+id/startPauseButton"
+            app:layout_constraintTop_toBottomOf="@+id/startPauseButton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+>>>>>>> c4144caddc92ab5f19b818255ab88e93af1a979a
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
 </layout>

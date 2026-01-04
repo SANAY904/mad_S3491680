@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -16,21 +17,51 @@
             android:background="@android:color/transparent"
             app:elevation="0dp">
 =======
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> c4144caddc92ab5f19b818255ab88e93af1a979a
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+>>>>>>> 82d5e1e42278d6baf72332826bb700cc5cb22bf1
+>>>>>>> c4144caddc92ab5f19b818255ab88e93af1a979a
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
         tools:context=".StatsActivity">
 
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/appBarLayout"
             android:layout_width="match_parent"
+<<<<<<< HEAD
             android:layout_height="wrap_content">
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+<<<<<<< HEAD
+            android:layout_height="wrap_content">
+=======
+<<<<<<< HEAD
+            android:layout_height="wrap_content">
+=======
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+>>>>>>> 82d5e1e42278d6baf72332826bb700cc5cb22bf1
+>>>>>>> c4144caddc92ab5f19b818255ab88e93af1a979a
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
 
             <com.google.android.material.appbar.MaterialToolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
+<<<<<<< HEAD
                 android:layout_height="?attr/actionBarSize"
 <<<<<<< HEAD
                 app:navigationIcon="?attr/homeAsUpIndicator"
@@ -39,17 +70,29 @@
 =======
                 app:title="Statistics" />
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> c4144caddc92ab5f19b818255ab88e93af1a979a
+                android:layout_height="?attr/actionBarSize"
+                app:title="Statistics" />
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
 
         </com.google.android.material.appbar.AppBarLayout>
 
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
 <<<<<<< HEAD
+<<<<<<< HEAD
             android:layout_height="match_parent"
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
 =======
             android:layout_height="match_parent">
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+            android:layout_height="match_parent">
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -57,6 +100,7 @@
                 android:orientation="vertical"
                 android:padding="16dp">
 
+<<<<<<< HEAD
 <<<<<<< HEAD
                 <!-- Overview Summary Card -->
                 <com.google.android.material.card.MaterialCardView
@@ -189,6 +233,8 @@
                         android:text="No sessions recorded yet." />
                 </LinearLayout>
 =======
+=======
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
 
                 <TextView
                     style="@style/TextAppearance.MaterialComponents.Headline6"
@@ -203,24 +249,94 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Here's a summary of your focus sessions." />
+<<<<<<< HEAD
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recentActivityRecyclerView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
 <<<<<<< HEAD
+<<<<<<< HEAD
                     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
 =======
                     android:layout_marginTop="16dp"
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+                    android:layout_marginTop="16dp"
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
                     tools:listitem="@layout/item_session" />
 
             </LinearLayout>
         </androidx.core.widget.NestedScrollView>
 <<<<<<< HEAD
+<<<<<<< HEAD
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 =======
     </LinearLayout>
 >>>>>>> 3498cc690c20aecf062c4d01b52f8c8a4195ec91
+=======
+    </LinearLayout>
+<<<<<<< HEAD
+=======
+=======
+                android:layout_height="?attr/actionBarSize" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <TextView
+            android:id="@+id/statsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="Statistics"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/appBarLayout" />
+
+        <TextView
+            android:id="@+id/totalFocusTimeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Total Focus Time"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/statsTitle"            app:layout_constraintTop_toBottomOf="@id/statsTitle" />
+
+        <TextView
+            android:id="@+id/totalFocusTimeValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0h 0m"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/totalFocusTimeLabel"            app:layout_constraintTop_toBottomOf="@+id/totalFocusTimeLabel" />
+
+        <TextView
+            android:id="@+id/sessionsCompletedLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Focus Sessions Completed"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/totalFocusTimeValue"            app:layout_constraintTop_toBottomOf="@+id/totalFocusTimeValue" />
+
+        <TextView
+            android:id="@+id/sessionsCompletedValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/sessionsCompletedLabel"            app:layout_constraintTop_toBottomOf="@+id/sessionsCompletedLabel" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+>>>>>>> 82d5e1e42278d6baf72332826bb700cc5cb22bf1
+>>>>>>> c4144caddc92ab5f19b818255ab88e93af1a979a
+>>>>>>> 9a6205be34ae7be24b1d4534b310b2f34d77ddbd
 </layout>
