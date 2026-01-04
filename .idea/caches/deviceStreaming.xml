@@ -197,6 +197,7 @@
           <option name="screenY" value="2340" />
         </PersistentDeviceSelectionData>
         <PersistentDeviceSelectionData>
+<<<<<<< HEAD
           <option name="api" value="36" />
           <option name="brand" value="samsung" />
           <option name="codename" value="a34x" />
@@ -209,6 +210,8 @@
           <option name="screenY" value="2340" />
         </PersistentDeviceSelectionData>
         <PersistentDeviceSelectionData>
+=======
+>>>>>>> 82d5e1e42278d6baf72332826bb700cc5cb22bf1
           <option name="api" value="34" />
           <option name="brand" value="samsung" />
           <option name="codename" value="a35x" />
@@ -245,6 +248,7 @@
           <option name="screenY" value="2340" />
         </PersistentDeviceSelectionData>
         <PersistentDeviceSelectionData>
+<<<<<<< HEAD
           <option name="api" value="36" />
           <option name="brand" value="samsung" />
           <option name="codename" value="a36xq" />
@@ -257,6 +261,8 @@
           <option name="screenY" value="2340" />
         </PersistentDeviceSelectionData>
         <PersistentDeviceSelectionData>
+=======
+>>>>>>> 82d5e1e42278d6baf72332826bb700cc5cb22bf1
           <option name="api" value="35" />
           <option name="brand" value="samsung" />
           <option name="codename" value="a56x" />
@@ -488,6 +494,7 @@
           <option name="screenY" value="2340" />
         </PersistentDeviceSelectionData>
         <PersistentDeviceSelectionData>
+<<<<<<< HEAD
           <option name="api" value="36" />
           <option name="brand" value="samsung" />
           <option name="codename" value="e1q" />
@@ -501,6 +508,8 @@
           <option name="screenY" value="2340" />
         </PersistentDeviceSelectionData>
         <PersistentDeviceSelectionData>
+=======
+>>>>>>> 82d5e1e42278d6baf72332826bb700cc5cb22bf1
           <option name="api" value="34" />
           <option name="brand" value="samsung" />
           <option name="codename" value="e3q" />
@@ -986,6 +995,7 @@
         </PersistentDeviceSelectionData>
         <PersistentDeviceSelectionData>
           <option name="api" value="36" />
+<<<<<<< HEAD
           <option name="brand" value="samsung" />
           <option name="codename" value="r9q" />
           <option name="id" value="r9q" />
@@ -998,6 +1008,8 @@
         </PersistentDeviceSelectionData>
         <PersistentDeviceSelectionData>
           <option name="api" value="36" />
+=======
+>>>>>>> 82d5e1e42278d6baf72332826bb700cc5cb22bf1
           <option name="brand" value="google" />
           <option name="codename" value="rango" />
           <option name="id" value="rango" />
@@ -1120,6 +1132,7 @@
           <option name="screenX" value="1080" />
           <option name="screenY" value="2408" />
         </PersistentDeviceSelectionData>
+<<<<<<< HEAD
         <PersistentDeviceSelectionData>
           <option name="api" value="33" />
           <option name="brand" value="samsung" />
@@ -1132,6 +1145,8 @@
           <option name="screenX" value="1440" />
           <option name="screenY" value="3200" />
         </PersistentDeviceSelectionData>
+=======
+>>>>>>> 82d5e1e42278d6baf72332826bb700cc5cb22bf1
       </list>
     </option>
   </component>

@@ -20,7 +20,10 @@ import androidx.core.app.NotificationManagerCompat
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.FirebaseFirestore
+<<<<<<< HEAD
 import com.google.firebase.Timestamp
+=======
+>>>>>>> 82d5e1e42278d6baf72332826bb700cc5cb22bf1
 import org.json.JSONArray
 import uk.ac.tees.mad.focustimer.databinding.ActivityTimerBinding
 import java.io.BufferedReader
@@ -60,7 +63,10 @@ class TimerActivity : AppCompatActivity() {
 
         createNotificationChannel()
         requestNotificationPermission()
+<<<<<<< HEAD
         loadStats()
+=======
+>>>>>>> 82d5e1e42278d6baf72332826bb700cc5cb22bf1
 
         binding.settingsButton.setOnClickListener {
             startActivity(Intent(this, SettingsActivity::class.java))
@@ -289,12 +295,17 @@ class TimerActivity : AppCompatActivity() {
             userDocRef.update("totalFocusTime", FieldValue.increment(focusTime / 1000))
             userDocRef.update("sessionsCompleted", FieldValue.increment(1))
                 .addOnSuccessListener { 
+<<<<<<< HEAD
                     Log.d("TimerActivity", "Stats updated successfully!")
                     loadStats() 
+=======
+                    Log.d("TimerActivity", "Stats updated successfully!") 
+>>>>>>> 82d5e1e42278d6baf72332826bb700cc5cb22bf1
                 }
                 .addOnFailureListener { e -> 
                     Log.w("TimerActivity", "Error updating stats", e) 
                 }
+<<<<<<< HEAD
 
             val session = hashMapOf(
                 "type" to "Focus",
@@ -319,6 +330,8 @@ class TimerActivity : AppCompatActivity() {
                     binding.sessionsCompletedValue.text = sessionsCompleted.toString()
                 }
             }
+=======
+>>>>>>> 82d5e1e42278d6baf72332826bb700cc5cb22bf1
         }
     }
 

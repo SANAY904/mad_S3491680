@@ -41,6 +41,7 @@
 
         </com.google.android.material.appbar.AppBarLayout>
 
+<<<<<<< HEAD
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/statsCard"
             android:layout_width="0dp"
@@ -107,6 +108,8 @@
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
+=======
+>>>>>>> 82d5e1e42278d6baf72332826bb700cc5cb22bf1
         <com.google.android.material.progressindicator.CircularProgressIndicator
             android:id="@+id/progressIndicator"
             android:layout_width="300dp"
@@ -116,7 +119,11 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+<<<<<<< HEAD
             app:layout_constraintTop_toBottomOf="@id/statsCard" />
+=======
+            app:layout_constraintTop_toBottomOf="@id/appBarLayout" />
+>>>>>>> 82d5e1e42278d6baf72332826bb700cc5cb22bf1
 
         <TextView
             android:id="@+id/timerTextView"
@@ -137,7 +144,11 @@
             android:text="Start"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+<<<<<<< HEAD
             app:layout_constraintTop_toBottomOf="@id/progressIndicator" />
+=======
+            app:layout_constraintTop_toBottomOf="@+id/progressIndicator" />
+>>>>>>> 82d5e1e42278d6baf72332826bb700cc5cb22bf1
 
         <ImageButton
             android:id="@+id/resetButton"
